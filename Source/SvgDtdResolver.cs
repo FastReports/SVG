@@ -32,11 +32,12 @@ namespace Svg
             if (absoluteUri.ToString().IndexOf("svg", StringComparison.InvariantCultureIgnoreCase) > -1)
             {
                 string svg11Path;
-//#if !FRCORE
+#if FASTREPORTSVG
+                svg11Path = "FastReport.SVG.Resources.svg11.dtd";
+#else
                 svg11Path = "FastReport.SVG.Source.Resources.svg11.dtd";
-//#else
 //                svg11Path = "FastReportCore.SVG.Source.Resources.svg11.dtd";
-//#endif
+#endif
                 return Assembly.GetExecutingAssembly().GetManifestResourceStream(svg11Path);
             }
             else

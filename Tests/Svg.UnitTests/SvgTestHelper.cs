@@ -120,10 +120,11 @@ namespace Svg.UnitTests
         protected virtual XmlDocument GetResourceXmlDoc(string fullResourceString)
         {
             using (var s = GetResourceStream(fullResourceString))
-            {
+            { 
                 Trace.WriteLine("Load XmlDocument from resource data.");
                 var xmlDoc = new XmlDocument();
-                xmlDoc.Load(s);
+                using (XmlReader reader = XmlReader.Create(s, new XmlReaderSettings() { DtdProcessing = DtdProcessing.Ignore }))
+                    xmlDoc.Load(reader);
                 Trace.WriteLine("Done XmlDocument loading from resource data.");
                 return xmlDoc;
             }
@@ -151,7 +152,9 @@ namespace Svg.UnitTests
                 Assert.Fail("Test file missing.", file);
 
             var xmlDoc = new XmlDocument();
-            xmlDoc.LoadXml(File.ReadAllText(file));
+            using (Stream s = File.OpenRead(file))
+            using (XmlReader reader = XmlReader.Create(s, new XmlReaderSettings() { DtdProcessing = DtdProcessing.Ignore }))
+                xmlDoc.Load(reader);
             return xmlDoc;
         }
 

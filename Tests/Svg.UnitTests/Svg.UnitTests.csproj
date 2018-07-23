@@ -69,12 +69,6 @@
     <Compile Include="SvgTextElementDeepCopyTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Source\Svg.csproj">
-      <Project>{886A98C5-37C0-4E8B-885E-30C1D2F98B47}</Project>
-      <Name>Svg</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\Issue204_PrivateFont\BrushScriptMT2.ttf" />
     <None Include="svgkey.snk" />
   </ItemGroup>
@@ -98,6 +92,17 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\Issue281_Bounds\BoundsTest.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\FastReport.SVG\FastReport.SVG.csproj">
+      <Project>{a0eb6c49-85e2-4a25-9e72-6bcb8c67c1fb}</Project>
+      <Name>FastReport.SVG</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="test.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

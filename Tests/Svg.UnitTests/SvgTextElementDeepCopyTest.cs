@@ -44,7 +44,8 @@ namespace Svg.UnitTests
             memoryStream.Seek(0, SeekOrigin.Begin);
 
             var xmlDocument = new XmlDocument();
-            xmlDocument.Load(memoryStream);
+            using (XmlReader reader = XmlReader.Create(memoryStream, new XmlReaderSettings() { DtdProcessing = DtdProcessing.Ignore }))
+                xmlDocument.Load(reader);
 
             Assert.AreEqual(2, xmlDocument.ChildNodes.Count);
             var svgNode = xmlDocument.ChildNodes[1];
