@@ -9,6 +9,8 @@ using System.Drawing.Text;
 using Svg.DataTypes;
 using System.Linq;
 
+#pragma warning disable
+
 namespace Svg
 {
     public abstract class SvgTextBase : SvgVisualElement
@@ -903,3 +905,6 @@ namespace Svg
         }
     }
 }
+
+
+#pragma warning restore

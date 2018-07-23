@@ -1,5 +1,7 @@
-﻿using Svg.DataTypes;
+using Svg.DataTypes;
 using System.ComponentModel;
+
+#pragma warning disable
 
 namespace Svg
 {
@@ -65,3 +67,6 @@ namespace Svg
 		xMaxYMax
 	}
 }
+
+
+#pragma warning restore

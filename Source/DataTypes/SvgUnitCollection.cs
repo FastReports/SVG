@@ -1,8 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
+
+#pragma warning disable
 
 namespace Svg
 {
@@ -92,3 +94,5 @@ namespace Svg
         }
     }
 }
+
+#pragma warning restore

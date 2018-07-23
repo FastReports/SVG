@@ -1,5 +1,7 @@
-﻿
+
 using System.Globalization;
+
+#pragma warning disable
 
 namespace ExCSS.Model.TextBlocks
 {
@@ -21,3 +23,6 @@ namespace ExCSS.Model.TextBlocks
         }
     }
 }
+
+
+#pragma warning restore

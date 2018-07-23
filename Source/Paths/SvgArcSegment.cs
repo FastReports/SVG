@@ -4,6 +4,8 @@ using System.Text;
 using System.Drawing.Drawing2D;
 using System.Drawing;
 
+#pragma warning disable
+
 namespace Svg.Pathing
 {
     public sealed class SvgArcSegment : SvgPathSegment
@@ -175,3 +177,6 @@ namespace Svg.Pathing
         Large = 1
     }
 }
+
+
+#pragma warning restore

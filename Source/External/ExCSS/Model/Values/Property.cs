@@ -1,6 +1,8 @@
 using ExCSS.Model.Extensions;
 
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     public class Property
@@ -45,3 +47,6 @@ namespace ExCSS
         }
     }
 }
+
+
+#pragma warning restore

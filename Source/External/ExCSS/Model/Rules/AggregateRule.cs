@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using ExCSS.Model;
 
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     public abstract class AggregateRule : RuleSet, ISupportsRuleSets
@@ -14,3 +16,6 @@ namespace ExCSS
         public List<RuleSet> RuleSets { get; private set; }
     }
 }
+
+
+#pragma warning restore

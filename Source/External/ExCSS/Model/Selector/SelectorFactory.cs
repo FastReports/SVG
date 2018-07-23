@@ -1,9 +1,11 @@
-﻿using System;
+using System;
 using System.Globalization;
 using ExCSS.Model;
 using ExCSS.Model.TextBlocks;
 
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     internal sealed class SelectorFactory
@@ -800,3 +802,6 @@ namespace ExCSS
         }
     }
 }
+
+
+#pragma warning restore

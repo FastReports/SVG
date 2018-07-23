@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.ComponentModel;
 
+#pragma warning disable
+
 namespace Svg
 {
     /// <summary>Specifies the shape to be used at the end of open subpaths when they are stroked.</summary>
@@ -22,3 +24,6 @@ namespace Svg
         Square
     }
 }
+
+
+#pragma warning restore

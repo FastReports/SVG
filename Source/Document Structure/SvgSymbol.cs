@@ -1,8 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Drawing;
+
+#pragma warning disable
 
 namespace Svg.Document_Structure
 {
@@ -111,3 +113,6 @@ namespace Svg.Document_Structure
         }
     }
 }
+
+
+#pragma warning restore

@@ -4,6 +4,8 @@ using System.Drawing.Drawing2D;
 using System.Linq;
 using Svg.DataTypes;
 
+#pragma warning disable
+
 namespace Svg
 {
     [SvgElement("marker")]
@@ -295,3 +297,5 @@ namespace Svg
         }
     }
 }
+
+#pragma warning restore

@@ -4,6 +4,8 @@ using System.Drawing.Drawing2D;
 using System.Diagnostics;
 using System.Linq;
 
+#pragma warning disable
+
 namespace Svg
 {
     /// <summary>
@@ -382,3 +384,6 @@ namespace Svg
 
     }
 }
+
+
+#pragma warning restore

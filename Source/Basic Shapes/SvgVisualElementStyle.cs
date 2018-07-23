@@ -8,6 +8,8 @@ using Svg.DataTypes;
 using System.Text.RegularExpressions;
 using System.Linq;
 
+#pragma warning disable
+
 namespace Svg
 {
     public abstract partial class SvgVisualElement
@@ -59,3 +61,5 @@ namespace Svg
 
     }
 }
+
+#pragma warning restore

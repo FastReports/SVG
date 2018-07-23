@@ -1,7 +1,9 @@
-﻿using System;
+using System;
 using System.Text;
 
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     public class AggregateSelectorList : SelectorList
@@ -42,3 +44,6 @@ namespace ExCSS
         }
     }
 }
+
+
+#pragma warning restore

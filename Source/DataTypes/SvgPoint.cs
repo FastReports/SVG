@@ -4,6 +4,8 @@ using System.Text;
 using System.Drawing;
 using System.ComponentModel;
 
+#pragma warning disable
+
 namespace Svg
 {
     public struct SvgPoint
@@ -63,3 +65,5 @@ namespace Svg
         }
     }
 }
+
+#pragma warning restore

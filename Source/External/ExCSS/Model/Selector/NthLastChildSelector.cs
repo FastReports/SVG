@@ -1,6 +1,8 @@
-﻿using System;
+using System;
 
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     internal sealed class NthLastChildSelector : NthChildSelector, IToString
@@ -11,3 +13,5 @@ namespace ExCSS
         }
     }
 }
+
+#pragma warning restore

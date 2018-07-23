@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.ComponentModel;
 
+#pragma warning disable
+
 namespace Svg
 {
     [DefaultProperty("Text")]
@@ -26,3 +28,5 @@ namespace Svg
         }
     }
 }
+
+#pragma warning restore

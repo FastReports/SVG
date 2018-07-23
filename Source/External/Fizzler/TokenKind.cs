@@ -19,6 +19,8 @@
 // 
 #endregion
 
+#pragma warning disable
+
 namespace Fizzler
 {
     /// <summary>
@@ -107,3 +109,5 @@ namespace Fizzler
         Char,
     }
 }
+
+#pragma warning restore

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
+#pragma warning disable
+
 namespace Svg.Pathing
 {
     public sealed class SvgClosePathSegment : SvgPathSegment
@@ -33,3 +35,5 @@ namespace Svg.Pathing
 
     }
 }
+
+#pragma warning restore

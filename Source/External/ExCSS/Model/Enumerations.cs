@@ -1,5 +1,7 @@
-﻿
+
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     internal static class RuleTypes
@@ -255,3 +257,6 @@ namespace ExCSS
         InFunction
     }
 }
+
+
+#pragma warning restore

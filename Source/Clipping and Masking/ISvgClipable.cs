@@ -4,6 +4,8 @@ using System.Text;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 
+#pragma warning disable
+
 namespace Svg
 {
     /// <summary>
@@ -31,3 +33,5 @@ namespace Svg
         void ResetClip(ISvgRenderer renderer);
     }
 }
+
+#pragma warning restore

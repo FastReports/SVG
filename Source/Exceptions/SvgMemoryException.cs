@@ -1,8 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
+
+#pragma warning disable
 
 namespace Svg.Exceptions
 {
@@ -18,3 +20,6 @@ namespace Svg.Exceptions
 			StreamingContext context) : base(info, context) {}
 	}
 }
+
+
+#pragma warning restore

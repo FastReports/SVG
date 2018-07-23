@@ -1,4 +1,6 @@
-﻿
+
+#pragma warning disable
+
 namespace ExCSS.Model.TextBlocks
 {
     internal class SymbolBlock : Block
@@ -45,3 +47,6 @@ namespace ExCSS.Model.TextBlocks
         }
     }
 }
+
+
+#pragma warning restore

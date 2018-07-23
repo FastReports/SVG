@@ -1,5 +1,7 @@
 
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     public abstract class RuleSet
@@ -14,3 +16,6 @@ namespace ExCSS
         public abstract string ToString(bool friendlyFormat, int indentation = 0);
     }
 }
+
+
+#pragma warning restore

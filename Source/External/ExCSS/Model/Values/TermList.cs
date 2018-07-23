@@ -1,9 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
 
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     public class TermList : Term
@@ -121,3 +123,6 @@ namespace ExCSS
         }
     }
 }
+
+
+#pragma warning restore

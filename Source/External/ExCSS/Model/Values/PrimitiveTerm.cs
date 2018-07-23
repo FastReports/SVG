@@ -1,7 +1,9 @@
-﻿using System;
+using System;
 using System.Globalization;
 
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     public class PrimitiveTerm : Term
@@ -167,3 +169,6 @@ namespace ExCSS
         }
     }
 }
+
+
+#pragma warning restore

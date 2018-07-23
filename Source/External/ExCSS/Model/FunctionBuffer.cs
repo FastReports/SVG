@@ -1,5 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+
+#pragma warning disable
 
 namespace ExCSS.Model
 {
@@ -135,3 +137,5 @@ namespace ExCSS.Model
         }
     }
 }
+
+#pragma warning restore

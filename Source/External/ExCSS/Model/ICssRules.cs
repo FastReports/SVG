@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
+
+#pragma warning disable
 
 namespace ExCSS.Model
 {
@@ -7,3 +9,5 @@ namespace ExCSS.Model
         List<RuleSet> RuleSets { get; }
     }
 }
+
+#pragma warning restore

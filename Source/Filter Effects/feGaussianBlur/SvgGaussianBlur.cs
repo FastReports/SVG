@@ -2,6 +2,8 @@ using System;
 using System.Drawing;
 using System.Collections.Generic;
 
+#pragma warning disable
+
 namespace Svg.FilterEffects
 {
     public enum BlurType
@@ -276,3 +278,5 @@ namespace Svg.FilterEffects
         }
     }
 }
+
+#pragma warning restore

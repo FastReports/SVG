@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.ComponentModel;
 
+#pragma warning disable
+
 namespace Svg
 {
     /// <summary>
@@ -29,6 +31,11 @@ namespace Svg
         private bool _inAttrDictionary;
         private string _name;
         private string _namespace;
+
+        public override bool Equals(object obj)
+        {
+            return Match(obj);
+        }
 
         /// <summary>
         /// When overridden in a derived class, returns a value that indicates whether this instance equals a specified object.
@@ -63,7 +70,6 @@ namespace Svg
 				return Namespaces.First(x => x.Value == _namespace).Key + ":" + _name;
 			}
 		}
-
 
         /// <summary>
         /// Gets the name of the SVG attribute.
@@ -123,3 +129,5 @@ namespace Svg
         }
     }
 }
+
+#pragma warning restore

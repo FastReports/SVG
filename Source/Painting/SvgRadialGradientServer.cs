@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Drawing.Drawing2D;
 using System.Linq;
 
+#pragma warning disable
+
 namespace Svg
 {
     [SvgElement("radialGradient")]
@@ -417,3 +419,6 @@ namespace Svg
         }
     }
 }
+
+
+#pragma warning restore

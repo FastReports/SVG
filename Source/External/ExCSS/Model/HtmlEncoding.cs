@@ -1,5 +1,7 @@
-﻿using System;
+using System;
 using System.Text;
+
+#pragma warning disable
 
 namespace ExCSS.Model
 {
@@ -457,3 +459,5 @@ namespace ExCSS.Model
         }
     }
 }
+
+#pragma warning restore

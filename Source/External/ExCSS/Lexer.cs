@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
@@ -6,6 +6,8 @@ using ExCSS.Model;
 using ExCSS.Model.TextBlocks;
 
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     sealed class Lexer
@@ -1225,3 +1227,6 @@ namespace ExCSS
         }
     }
 }
+
+
+#pragma warning restore

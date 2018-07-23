@@ -1,7 +1,9 @@
-﻿using System.Linq;
+using System.Linq;
 using ExCSS.Model.Extensions;
 
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     public class SupportsRule : ConditionalRule
@@ -40,3 +42,6 @@ namespace ExCSS
         }
     }
 }
+
+
+#pragma warning restore

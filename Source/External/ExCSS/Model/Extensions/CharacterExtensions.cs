@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
+
+#pragma warning disable
 
 namespace ExCSS.Model.Extensions
 {
@@ -78,3 +80,5 @@ namespace ExCSS.Model.Extensions
         }
     }
 }
+
+#pragma warning restore

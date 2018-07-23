@@ -1,7 +1,9 @@
-﻿using System;
+using System;
 using System.Drawing.Drawing2D;
 using System.Drawing;
 using System.Collections.Generic;
+
+#pragma warning disable
 
 namespace Svg
 {
@@ -24,3 +26,6 @@ namespace Svg
         void TranslateTransform(float dx, float dy, MatrixOrder order = MatrixOrder.Append);
     }
 }
+
+
+#pragma warning restore

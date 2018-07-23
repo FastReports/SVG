@@ -7,6 +7,8 @@ using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.Linq;
 
+#pragma warning disable
+
 namespace Svg.FilterEffects
 {
 	[SvgElement("feMerge")]
@@ -37,3 +39,5 @@ namespace Svg.FilterEffects
 
     }
 }
+
+#pragma warning restore

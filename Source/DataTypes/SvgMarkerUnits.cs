@@ -1,4 +1,6 @@
-﻿using System.ComponentModel;
+using System.ComponentModel;
+
+#pragma warning disable
 
 namespace Svg.DataTypes
 {
@@ -13,3 +15,6 @@ namespace Svg.DataTypes
 		UserSpaceOnUse
 	}
 }
+
+
+#pragma warning restore

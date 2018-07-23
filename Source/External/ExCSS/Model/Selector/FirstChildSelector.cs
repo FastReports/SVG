@@ -1,4 +1,6 @@
-﻿// ReSharper disable once CheckNamespace
+// ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     internal sealed class FirstChildSelector : BaseSelector, IToString
@@ -19,3 +21,5 @@ namespace ExCSS
         }
     }
 }
+
+#pragma warning restore

@@ -10,6 +10,8 @@ using System.Threading;
 
 using Svg.Pathing;
 
+#pragma warning disable
+
 namespace Svg
 {
     public static class PointFExtensions
@@ -549,3 +551,5 @@ namespace Svg
         }
     }
 }
+
+#pragma warning restore

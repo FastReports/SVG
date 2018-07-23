@@ -4,6 +4,8 @@ using System.Text;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 
+#pragma warning disable
+
 namespace Svg.Transforms
 {
     public abstract class SvgTransform : ICloneable
@@ -60,3 +62,5 @@ namespace Svg.Transforms
         }
     }
 }
+
+#pragma warning restore

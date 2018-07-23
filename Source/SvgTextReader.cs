@@ -1,10 +1,12 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Xml;
 using System.IO;
 using System.Collections.Specialized;
+
+#pragma warning disable
 
 namespace Svg
 {
@@ -38,7 +40,10 @@ namespace Svg
         {
             get
             {
-                return (this._customValue) ? this._value : base.Value;
+                if (this._customValue)
+                    return this._value;
+                else
+                    return base.Value;
             }
         }
 
@@ -51,7 +56,10 @@ namespace Svg
         {
             get
             {
-                return (this._customValue) ? this._localName : base.LocalName;
+                if (this._customValue)
+                    return this._localName;
+                else
+                    return base.LocalName;
             }
         }
 
@@ -166,3 +174,5 @@ namespace Svg
         }
     }
 }
+
+#pragma warning restore

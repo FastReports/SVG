@@ -1,10 +1,12 @@
-﻿using System;
+using System;
 using System.Resources;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Reflection;
 using System.Xml;
+
+#pragma warning disable
 
 namespace Svg
 {
@@ -29,7 +31,13 @@ namespace Svg
         {
             if (absoluteUri.ToString().IndexOf("svg", StringComparison.InvariantCultureIgnoreCase) > -1)
             {
-                return Assembly.GetExecutingAssembly().GetManifestResourceStream("Svg.Resources.svg11.dtd");
+                string svg11Path;
+//#if !FRCORE
+                svg11Path = "FastReport.SVG.Source.Resources.svg11.dtd";
+//#else
+//                svg11Path = "FastReportCore.SVG.Source.Resources.svg11.dtd";
+//#endif
+                return Assembly.GetExecutingAssembly().GetManifestResourceStream(svg11Path);
             }
             else
             {
@@ -38,3 +46,6 @@ namespace Svg
         }
     }
 }
+
+
+#pragma warning restore

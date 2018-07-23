@@ -1,5 +1,7 @@
 using System.Drawing.Drawing2D;
 
+#pragma warning disable
+
 namespace Svg
 {
     /// <summary>
@@ -22,3 +24,5 @@ namespace Svg
         GraphicsPath Path(ISvgRenderer renderer);
     }
 }
+
+#pragma warning restore

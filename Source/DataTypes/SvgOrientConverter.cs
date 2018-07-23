@@ -1,6 +1,8 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Globalization;
+
+#pragma warning disable
 
 namespace Svg.DataTypes
 {
@@ -56,3 +58,6 @@ namespace Svg.DataTypes
 		}
 	}
 }
+
+
+#pragma warning restore

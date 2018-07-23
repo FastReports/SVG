@@ -1,3 +1,5 @@
+#pragma warning disable
+
 namespace Svg
 {
     public class NonSvgElement : SvgElement
@@ -35,3 +37,5 @@ namespace Svg
         }
     }
 }
+
+#pragma warning restore

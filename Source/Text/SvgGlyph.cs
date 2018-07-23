@@ -1,6 +1,8 @@
-﻿using System.Linq;
+using System.Linq;
 using Svg.Pathing;
 using System.Drawing.Drawing2D;
+
+#pragma warning disable
 
 namespace Svg
 {
@@ -100,3 +102,6 @@ namespace Svg
         }
     }
 }
+
+
+#pragma warning restore

@@ -1,6 +1,8 @@
-﻿using ExCSS.Model.Extensions;
+using ExCSS.Model.Extensions;
 // ReSharper disable once CheckNamespace
 
+
+#pragma warning disable
 
 namespace ExCSS
 {
@@ -28,3 +30,6 @@ namespace ExCSS
         }
     }
 }
+
+
+#pragma warning restore

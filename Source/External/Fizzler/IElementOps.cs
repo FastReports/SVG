@@ -19,6 +19,8 @@
 // 
 #endregion
 
+#pragma warning disable
+
 namespace Fizzler
 {
     /// <summary>
@@ -188,3 +190,5 @@ namespace Fizzler
         Selector<TElement> NthLastChild(int a, int b);
     }
 }
+
+#pragma warning restore

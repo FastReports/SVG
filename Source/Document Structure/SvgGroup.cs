@@ -1,6 +1,8 @@
 using System.Drawing;
 using System.Drawing.Drawing2D;
 
+#pragma warning disable
+
 namespace Svg
 {
     /// <summary>
@@ -68,3 +70,6 @@ namespace Svg
         }
     }
 }
+
+
+#pragma warning restore

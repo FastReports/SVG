@@ -1,9 +1,11 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Collections.Generic;
 using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
+
+#pragma warning disable
 
 namespace Svg
 {
@@ -30,3 +32,5 @@ namespace Svg
 
     }
 }
+
+#pragma warning restore

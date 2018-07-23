@@ -1,5 +1,7 @@
-﻿
+
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     public abstract class BaseSelector
@@ -13,3 +15,6 @@ namespace ExCSS
     }
 }
 
+
+
+#pragma warning restore

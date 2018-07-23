@@ -1,4 +1,6 @@
-﻿using System.Drawing;
+using System.Drawing;
+
+#pragma warning disable
 
 namespace Svg
 {
@@ -20,3 +22,5 @@ namespace Svg
         } 
     }
 }
+
+#pragma warning restore

@@ -1,4 +1,6 @@
-﻿// ReSharper disable once CheckNamespace
+// ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     public class GenericRule : AggregateRule
@@ -34,3 +36,6 @@ namespace ExCSS
         }
     }
 }
+
+
+#pragma warning restore

@@ -1,4 +1,6 @@
-﻿
+
+#pragma warning disable
+
 namespace ExCSS
 {
     public sealed class StylesheetParseError
@@ -25,3 +27,5 @@ namespace ExCSS
         }
     }
 }
+
+#pragma warning restore

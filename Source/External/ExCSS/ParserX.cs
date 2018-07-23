@@ -1,8 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
+
+#pragma warning disable
 
 namespace ExCSS
 {
@@ -1423,3 +1425,6 @@ namespace ExCSS
         #endregion
     }
 }
+
+
+#pragma warning restore

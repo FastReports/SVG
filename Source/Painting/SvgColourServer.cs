@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
 
+#pragma warning disable
+
 namespace Svg
 {
     public sealed class SvgColourServer : SvgPaintServer
@@ -55,11 +57,13 @@ namespace Svg
         	
             Color c = this.Colour;
 
+#if !FRCORE
             // Return the name if it exists
             if (c.IsKnownColor)
             {
                 return c.Name;
             }
+#endif
 
             // Return the hex value
             return String.Format("#{0}", c.ToArgb().ToString("x").Substring(2));
@@ -102,3 +106,6 @@ namespace Svg
         }
     }
 }
+
+
+#pragma warning restore

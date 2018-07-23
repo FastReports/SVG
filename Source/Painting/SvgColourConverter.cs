@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Globalization;
@@ -6,12 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 
+#pragma warning disable
+
 namespace Svg
 {
     /// <summary>
     /// Converts string representations of colours into <see cref="Color"/> objects.
     /// </summary>
-    public class SvgColourConverter : System.Drawing.ColorConverter
+    public class SvgColourConverter : ColorConverter
     {
         /// <summary>
         /// Converts the given object to the converter's native type.
@@ -266,3 +268,5 @@ namespace Svg
 
     }
 }
+
+#pragma warning restore

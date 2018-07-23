@@ -8,6 +8,8 @@ using System.Text.RegularExpressions;
 using System.Globalization;
 using System.Linq;
 
+#pragma warning disable
+
 namespace Svg.Transforms
 {
     public class SvgTransformConverter : TypeConverter
@@ -210,3 +212,6 @@ namespace Svg.Transforms
         }
     }
 }
+
+
+#pragma warning restore

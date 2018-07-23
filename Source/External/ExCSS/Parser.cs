@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using ExCSS.Model;
@@ -29,6 +29,8 @@ using System;
 //OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //SOFTWARE.
 
+
+#pragma warning disable
 
 namespace ExCSS
 {
@@ -272,3 +274,6 @@ namespace ExCSS
         }
     }
 }
+
+
+#pragma warning restore

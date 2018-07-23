@@ -1,8 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+
+#pragma warning disable
 
 namespace Svg
 {
@@ -24,3 +26,6 @@ namespace Svg
         Italic = 4
     }
 }
+
+
+#pragma warning restore

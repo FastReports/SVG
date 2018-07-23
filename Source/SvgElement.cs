@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -9,6 +9,8 @@ using Svg.Transforms;
 using System.Reflection;
 using System.Threading;
 using System.Globalization;
+
+#pragma warning disable
 
 namespace Svg
 {
@@ -557,7 +559,6 @@ namespace Svg
                     (!attr.Attribute.InAttributeDictionary || _attributes.ContainsKey(attr.Attribute.Name)))
                 {
                     object propertyValue = attr.Property.GetValue(this);
-                    string value = (string)attr.Property.Converter.ConvertTo(propertyValue, typeof(string));
 
                     forceWrite = false;
                     writeStyle = (attr.Attribute.Name == "fill");
@@ -576,7 +577,8 @@ namespace Svg
                             forceWrite = true;
                         }
                     }
-
+                    string value = propertyValue != null ?
+                        (string)attr.Property.Converter.ConvertTo(propertyValue, typeof(string)) : null;
                     if (propertyValue != null)
                     {
                         var type = propertyValue.GetType();
@@ -1230,3 +1232,5 @@ namespace Svg
         void Render(ISvgRenderer renderer);
     }
 }
+
+#pragma warning restore

@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Text;
 using ExCSS.Model;
 
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     public class GenericFunction : Term
@@ -31,3 +33,5 @@ namespace ExCSS
         }
     }
 }
+
+#pragma warning restore

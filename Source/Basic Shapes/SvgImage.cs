@@ -6,6 +6,8 @@ using System.IO;
 using System.Net;
 using Svg.Transforms;
 
+#pragma warning disable
+
 namespace Svg
 {
     /// <summary>
@@ -337,3 +339,5 @@ namespace Svg
 		}
     }
 }
+
+#pragma warning restore

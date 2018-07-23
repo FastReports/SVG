@@ -1,9 +1,11 @@
-﻿using System;
+using System;
 using System.Linq;
 using ExCSS.Model;
 using ExCSS.Model.Extensions;
 
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     public class MediaRule : ConditionalRule, ISupportsMedia
@@ -45,3 +47,6 @@ namespace ExCSS
         }
     }
 }
+
+
+#pragma warning restore

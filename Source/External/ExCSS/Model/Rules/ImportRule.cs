@@ -1,7 +1,9 @@
-﻿using ExCSS.Model;
+using ExCSS.Model;
 using ExCSS.Model.Extensions;
 
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     public class ImportRule : RuleSet, ISupportsMedia
@@ -39,3 +41,6 @@ namespace ExCSS
         }
     }
 }
+
+
+#pragma warning restore

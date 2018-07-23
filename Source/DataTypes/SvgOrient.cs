@@ -2,6 +2,8 @@ using Svg.DataTypes;
 using System.ComponentModel;
 using System;
 
+#pragma warning disable
+
 namespace Svg
 {
     /// <summary>
@@ -104,3 +106,6 @@ namespace Svg
     }
 
 }
+
+
+#pragma warning restore

@@ -1,7 +1,9 @@
-﻿using System;
+using System;
 using ExCSS.Model;
 
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     public struct CombinatorSelector
@@ -43,3 +45,6 @@ namespace ExCSS
     }
 }
 
+
+
+#pragma warning restore

@@ -7,6 +7,8 @@ using System.Drawing.Imaging;
 using System.Drawing.Drawing2D;
 using Svg.DataTypes;
 
+#pragma warning disable
+
 namespace Svg.FilterEffects
 {
     /// <summary>
@@ -190,3 +192,5 @@ namespace Svg.FilterEffects
 		}
     }
 }
+
+#pragma warning restore

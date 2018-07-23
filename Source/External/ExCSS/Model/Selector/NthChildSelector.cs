@@ -1,5 +1,7 @@
-﻿
+
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     internal abstract class NthChildSelector : BaseSelector, IToString
@@ -22,3 +24,5 @@ namespace ExCSS
         public abstract override string ToString(bool friendlyFormat, int indentation = 0);
     }
 }
+
+#pragma warning restore

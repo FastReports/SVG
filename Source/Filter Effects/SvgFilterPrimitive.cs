@@ -4,6 +4,8 @@ using System.Text;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 
+#pragma warning disable
+
 namespace Svg.FilterEffects
 {
     public abstract class SvgFilterPrimitive : SvgElement
@@ -37,3 +39,5 @@ namespace Svg.FilterEffects
         public abstract void Process(ImageBuffer buffer);
     }
 }
+
+#pragma warning restore

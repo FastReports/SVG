@@ -1,7 +1,9 @@
-﻿using Svg.DataTypes;
+using Svg.DataTypes;
 using System;
 using System.ComponentModel;
 using System.Globalization;
+
+#pragma warning disable
 
 namespace Svg
 {
@@ -315,3 +317,6 @@ namespace Svg
         }
     }
 }
+
+
+#pragma warning restore

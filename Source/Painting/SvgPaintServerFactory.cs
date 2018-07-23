@@ -5,6 +5,8 @@ using System.Drawing;
 using System.Globalization;
 using System.Linq;
 
+#pragma warning disable
+
 namespace Svg
 {
     internal class SvgPaintServerFactory : TypeConverter
@@ -165,3 +167,5 @@ namespace Svg
         }
     }
 }
+
+#pragma warning restore

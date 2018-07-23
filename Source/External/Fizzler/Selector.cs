@@ -19,6 +19,8 @@
 // 
 #endregion
 
+#pragma warning disable
+
 namespace Fizzler
 {
     using System.Collections.Generic;
@@ -28,3 +30,5 @@ namespace Fizzler
     /// </summary>
     public delegate IEnumerable<TElement> Selector<TElement>(IEnumerable<TElement> elements);
 }
+
+#pragma warning restore

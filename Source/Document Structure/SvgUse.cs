@@ -6,6 +6,8 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.Drawing.Drawing2D;
 
+#pragma warning disable
+
 namespace Svg
 {
     [SvgElement("use")]
@@ -110,3 +112,5 @@ namespace Svg
 
     }
 }
+
+#pragma warning restore

@@ -1,4 +1,6 @@
-﻿
+
+#pragma warning disable
+
 namespace ExCSS.Model.TextBlocks
 {
     internal class MatchBlock : Block
@@ -37,3 +39,6 @@ namespace ExCSS.Model.TextBlocks
         }
     }
 }
+
+
+#pragma warning restore

@@ -1,7 +1,9 @@
-﻿using ExCSS.Model;
+using ExCSS.Model;
 using ExCSS.Model.Extensions;
 
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     public class FontFaceRule : RuleSet, ISupportsDeclarations
@@ -86,3 +88,6 @@ namespace ExCSS
         }
     }
 }
+
+
+#pragma warning restore

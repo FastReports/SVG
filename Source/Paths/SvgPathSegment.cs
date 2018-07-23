@@ -4,6 +4,8 @@ using System.Text;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 
+#pragma warning disable
+
 namespace Svg.Pathing
 {
     public abstract class SvgPathSegment
@@ -41,3 +43,6 @@ namespace Svg.Pathing
 		}
     }
 }
+
+
+#pragma warning restore

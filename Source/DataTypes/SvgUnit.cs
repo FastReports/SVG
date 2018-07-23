@@ -4,6 +4,8 @@ using System.Globalization;
 using System.Linq;
 using System.Drawing;
 
+#pragma warning disable
+
 namespace Svg
 {
     /// <summary>
@@ -396,3 +398,6 @@ namespace Svg
         Point
     }
 }
+
+
+#pragma warning restore

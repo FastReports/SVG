@@ -4,6 +4,8 @@ using System.Text;
 using System.Drawing.Drawing2D;
 using System.Globalization;
 
+#pragma warning disable
+
 namespace Svg.Transforms
 {
     public sealed class SvgScale : SvgTransform
@@ -53,3 +55,6 @@ namespace Svg.Transforms
 		}
     }
 }
+
+
+#pragma warning restore

@@ -7,6 +7,8 @@ using System.Diagnostics;
 using System.Linq;
 using ExCSS;
 
+#pragma warning disable
+
 namespace Svg
 {
     /// <summary>
@@ -338,3 +340,5 @@ namespace Svg
         }
     }
 }
+
+#pragma warning restore

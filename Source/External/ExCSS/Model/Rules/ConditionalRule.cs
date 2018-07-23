@@ -1,5 +1,7 @@
 
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     public abstract class ConditionalRule : AggregateRule
@@ -11,3 +13,6 @@ namespace ExCSS
         }
     }
 }
+
+
+#pragma warning restore

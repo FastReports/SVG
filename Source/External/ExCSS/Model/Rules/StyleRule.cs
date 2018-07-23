@@ -1,8 +1,10 @@
-﻿using System;
+using System;
 using ExCSS.Model;
 using ExCSS.Model.Extensions;
 
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     public class StyleRule : RuleSet, ISupportsSelector, ISupportsDeclarations
@@ -59,3 +61,6 @@ namespace ExCSS
         }
     }
 }
+
+
+#pragma warning restore

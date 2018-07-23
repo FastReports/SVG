@@ -1,4 +1,6 @@
-﻿
+
+#pragma warning disable
+
 namespace ExCSS.Model.TextBlocks
 {
     internal class SpecialCharacter : CharacterBlock
@@ -19,3 +21,6 @@ namespace ExCSS.Model.TextBlocks
         }
     }
 }
+
+
+#pragma warning restore

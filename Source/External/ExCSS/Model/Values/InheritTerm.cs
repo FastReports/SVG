@@ -1,4 +1,6 @@
-﻿using System;
+using System;
+
+#pragma warning disable
 
 namespace ExCSS
 {
@@ -15,3 +17,6 @@ namespace ExCSS
     }
 }
 
+
+
+#pragma warning restore

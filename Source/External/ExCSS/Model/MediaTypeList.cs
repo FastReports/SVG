@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using ExCSS.Model.Extensions;
 
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     public class MediaTypeList : IEnumerable<string>
@@ -96,3 +98,5 @@ namespace ExCSS
         }
     }
 }
+
+#pragma warning restore

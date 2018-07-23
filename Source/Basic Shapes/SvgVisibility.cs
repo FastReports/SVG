@@ -1,3 +1,5 @@
+#pragma warning disable
+
 namespace Svg
 {
     public enum SvgVisibility
@@ -7,3 +9,6 @@ namespace Svg
         Inherit
     }
 }
+
+
+#pragma warning restore

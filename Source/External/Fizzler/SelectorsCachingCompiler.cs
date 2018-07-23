@@ -19,6 +19,8 @@
 // 
 #endregion
 
+#pragma warning disable
+
 namespace Fizzler
 {
     #region Imports
@@ -76,3 +78,5 @@ namespace Fizzler
         }
     }
 }
+
+#pragma warning restore

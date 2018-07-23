@@ -15,6 +15,8 @@ using System.Threading;
 using System.Globalization;
 using Svg.Exceptions;
 
+#pragma warning disable
+
 namespace Svg
 {
     /// <summary>
@@ -247,7 +249,7 @@ namespace Svg
 			var elementFactory = new SvgElementFactory();
 
             var styles = new List<ISvgNode>();
-
+            
             while (reader.Read())
             {
                 try
@@ -493,7 +495,7 @@ namespace Svg
             {
                 throw;
             }
-
+            
             //Trace.TraceInformation("End Render");
         }
 
@@ -593,3 +595,6 @@ namespace Svg
         }
     }
 }
+
+
+#pragma warning restore

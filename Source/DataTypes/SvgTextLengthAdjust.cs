@@ -1,8 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+
+#pragma warning disable
 
 namespace Svg
 {
@@ -21,3 +23,6 @@ namespace Svg
         SpacingAndGlyphs
     }
 }
+
+
+#pragma warning restore

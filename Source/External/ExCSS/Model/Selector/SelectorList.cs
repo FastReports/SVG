@@ -1,7 +1,9 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     public abstract class SelectorList : BaseSelector, IEnumerable<BaseSelector>
@@ -55,3 +57,6 @@ namespace ExCSS
         public override abstract string ToString(bool friendlyFormat, int indentation = 0);
     }
 }
+
+
+#pragma warning restore

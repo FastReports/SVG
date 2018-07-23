@@ -1,9 +1,11 @@
-﻿using System;
+using System;
 using System.Text;
 using System.Collections.Generic;
 using System.Collections;
 
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     public class ComplexSelector : BaseSelector, IEnumerable<CombinatorSelector>
@@ -64,3 +66,6 @@ namespace ExCSS
         }
     }
 }
+
+
+#pragma warning restore

@@ -1,3 +1,5 @@
+#pragma warning disable
+
 namespace Svg
 {
     public class SvgUnknownElement : SvgElement
@@ -25,3 +27,5 @@ namespace Svg
         }
     }
 }
+
+#pragma warning restore

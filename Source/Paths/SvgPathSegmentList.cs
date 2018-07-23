@@ -3,6 +3,8 @@ using System.ComponentModel;
 using System.Collections.Generic;
 using System.Text;
 
+#pragma warning disable
+
 namespace Svg.Pathing
 {
     [TypeConverter(typeof(SvgPathBuilder))]
@@ -110,3 +112,5 @@ namespace Svg.Pathing
         }
     }
 }
+
+#pragma warning restore

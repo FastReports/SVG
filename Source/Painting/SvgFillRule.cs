@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.ComponentModel;
 
+#pragma warning disable
+
 namespace Svg
 {
 	[TypeConverter(typeof(SvgFillRuleConverter))]
@@ -13,3 +15,5 @@ namespace Svg
         Inherit
     }
 }
+
+#pragma warning restore

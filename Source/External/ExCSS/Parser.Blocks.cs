@@ -1,8 +1,10 @@
-﻿using System;
+using System;
 using System.Text;
 using System.Collections.Generic;
 using ExCSS.Model;
 using ExCSS.Model.TextBlocks;
+
+#pragma warning disable
 
 namespace ExCSS
 {
@@ -851,3 +853,6 @@ namespace ExCSS
         #endregion
     }
 }
+
+
+#pragma warning restore

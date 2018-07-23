@@ -8,6 +8,8 @@ using System.ComponentModel;
 using Svg.Transforms;
 using System.Linq;
 
+#pragma warning disable
+
 namespace Svg
 {
     /// <summary>
@@ -277,3 +279,5 @@ namespace Svg
         }
     }
 }
+
+#pragma warning restore

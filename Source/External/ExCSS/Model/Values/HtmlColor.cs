@@ -1,9 +1,11 @@
-﻿using System;
+using System;
 using System.Runtime.InteropServices;
 using ExCSS.Model;
 using ExCSS.Model.Extensions;
 
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     public class HtmlColor : Term, IEquatable<HtmlColor>
@@ -250,3 +252,5 @@ namespace ExCSS
         }
     }
 }
+
+#pragma warning restore

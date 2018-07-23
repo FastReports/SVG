@@ -1,4 +1,6 @@
-﻿namespace Svg
+#pragma warning disable
+
+namespace Svg
 {
     public class SvgContentNode : ISvgNode
     {
@@ -15,3 +17,6 @@
         }
     }
 }
+
+
+#pragma warning restore

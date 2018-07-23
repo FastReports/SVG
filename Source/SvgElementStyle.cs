@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
@@ -7,6 +7,8 @@ using System.ComponentModel;
 using Svg.DataTypes;
 using System.Text.RegularExpressions;
 using System.Linq;
+
+#pragma warning disable
 
 namespace Svg
 {
@@ -51,7 +53,13 @@ namespace Svg
         [SvgAttribute("fill", true)]
         public virtual SvgPaintServer Fill
         {
-            get { return ((SvgPaintServer)this.Attributes["fill"] ?? SvgColourServer.NotSet); }
+            get
+            {
+                if (this.Attributes["fill"] == null)
+                    return SvgColourServer.NotSet;
+                else
+                    return (SvgPaintServer)this.Attributes["fill"]; 
+            }
             set { this.Attributes["fill"] = value; }
         }
 
@@ -68,7 +76,13 @@ namespace Svg
         [SvgAttribute("fill-rule", true)]
         public virtual SvgFillRule FillRule
         {
-            get { return (SvgFillRule)(this.Attributes["fill-rule"] ?? SvgFillRule.NonZero); }
+            get
+            {
+                if (this.Attributes["fill-rule"] == null)
+                    return SvgFillRule.NonZero;
+                else
+                    return (SvgFillRule)this.Attributes["fill-rule"];
+            }
             set { this.Attributes["fill-rule"] = value; }
         }
 
@@ -78,7 +92,13 @@ namespace Svg
         [SvgAttribute("fill-opacity", true)]
         public virtual float FillOpacity
         {
-            get { return (float)(this.Attributes["fill-opacity"] ?? 1.0f); }
+            get
+            {
+                if (this.Attributes["fill-opacity"] == null)
+                    return 1.0f;
+                else
+                    return (float)this.Attributes["fill-opacity"];
+            }
             set { this.Attributes["fill-opacity"] = FixOpacityValue(value); }
         }
 
@@ -88,28 +108,52 @@ namespace Svg
         [SvgAttribute("stroke-width", true)]
         public virtual SvgUnit StrokeWidth
         {
-            get { return (SvgUnit)(this.Attributes["stroke-width"] ?? new SvgUnit(1.0f)); }
+            get
+            {
+                if (this.Attributes["stroke-width"] == null)
+                    return new SvgUnit(1.0f);
+                else
+                    return (SvgUnit)this.Attributes["stroke-width"];                
+            }
             set { this.Attributes["stroke-width"] = value; }
         }
 
         [SvgAttribute("stroke-linecap", true)]
         public virtual SvgStrokeLineCap StrokeLineCap
         {
-            get { return (SvgStrokeLineCap)(this.Attributes["stroke-linecap"] ?? SvgStrokeLineCap.Butt); }
+            get
+            {
+                if (this.Attributes["stroke-linecap"] == null)
+                    return SvgStrokeLineCap.Butt;
+                else
+                    return (SvgStrokeLineCap)this.Attributes["stroke-linecap"];
+            }
             set { this.Attributes["stroke-linecap"] = value; }
         }
 
         [SvgAttribute("stroke-linejoin", true)]
         public virtual SvgStrokeLineJoin StrokeLineJoin
         {
-            get { return (SvgStrokeLineJoin)(this.Attributes["stroke-linejoin"] ?? SvgStrokeLineJoin.Miter); }
+            get
+            {
+                if (this.Attributes["stroke-linejoin"] == null)
+                    return SvgStrokeLineJoin.Miter;
+                else
+                    return (SvgStrokeLineJoin)this.Attributes["stroke-linejoin"];
+            }
             set { this.Attributes["stroke-linejoin"] = value; }
         }
 
         [SvgAttribute("stroke-miterlimit", true)]
         public virtual float StrokeMiterLimit
         {
-            get { return (float)(this.Attributes["stroke-miterlimit"] ?? 4f); }
+            get
+            {
+                if (this.Attributes["stroke-miterlimit"] == null)
+                    return 4f;
+                else
+                    return (float)this.Attributes["stroke-miterlimit"];
+            }
             set { this.Attributes["stroke-miterlimit"] = value; }
         }
 
@@ -123,7 +167,13 @@ namespace Svg
         [SvgAttribute("stroke-dashoffset", true)]
         public virtual SvgUnit StrokeDashOffset
         {
-            get { return (SvgUnit)(this.Attributes["stroke-dashoffset"] ?? SvgUnit.Empty); }
+            get
+            {
+                if (this.Attributes["stroke-dashoffset"] == null)
+                    return SvgUnit.Empty;
+                else
+                    return (SvgUnit)this.Attributes["stroke-dashoffset"];
+            }
             set { this.Attributes["stroke-dashoffset"] = value; }
         }
 
@@ -133,7 +183,13 @@ namespace Svg
         [SvgAttribute("stroke-opacity", true)]
         public virtual float StrokeOpacity
         {
-            get { return (float)(this.Attributes["stroke-opacity"] ?? 1.0f); }
+            get
+            {
+                if (this.Attributes["stroke-opacity"] == null)
+                    return 1.0f;
+                else
+                    return (float)this.Attributes["stroke-opacity"];
+            }
             set { this.Attributes["stroke-opacity"] = FixOpacityValue(value); }
         }
 
@@ -155,7 +211,13 @@ namespace Svg
         [SvgAttribute("opacity", true)]
         public virtual float Opacity
         {
-            get { return (float)(this.Attributes["opacity"] ?? 1.0f); }
+            get
+            {
+                if (this.Attributes["opacity"] == null)
+                    return 1.0f;
+                else
+                    return (float)this.Attributes["opacity"];
+            }
             set { this.Attributes["opacity"] = FixOpacityValue(value); }
         }
 
@@ -205,7 +267,13 @@ namespace Svg
         [SvgAttribute("font-size", true)]
         public virtual SvgUnit FontSize
         {
-            get { return (SvgUnit)(this.Attributes["font-size"] ?? SvgUnit.Empty); }
+            get
+            {
+                if (this.Attributes["font-size"] == null)
+                    return SvgUnit.Empty;
+                else
+                    return (SvgUnit)this.Attributes["font-size"];
+            }
             set { this.Attributes["font-size"] = value; this.IsPathDirty = true; }
         }
 
@@ -215,7 +283,13 @@ namespace Svg
         [SvgAttribute("font-style", true)]
         public virtual SvgFontStyle FontStyle
         {
-            get { return (SvgFontStyle)(this.Attributes["font-style"] ?? SvgFontStyle.All); }
+            get
+            {
+                if (this.Attributes["font-style"] == null)
+                    return SvgFontStyle.All;
+                else
+                    return (SvgFontStyle)this.Attributes["font-style"];
+            }
             set { this.Attributes["font-style"] = value; this.IsPathDirty = true; }
         }
 
@@ -225,7 +299,13 @@ namespace Svg
         [SvgAttribute("font-variant", true)]
         public virtual SvgFontVariant FontVariant
         {
-            get { return (SvgFontVariant)(this.Attributes["font-variant"] ?? SvgFontVariant.Inherit); }
+            get
+            {
+                if (this.Attributes["font-variant"] == null)
+                    return SvgFontVariant.Inherit;
+                else
+                    return (SvgFontVariant)this.Attributes["font-variant"];
+            }
             set { this.Attributes["font-variant"] = value; this.IsPathDirty = true; }
         }
 
@@ -235,7 +315,13 @@ namespace Svg
         [SvgAttribute("text-decoration", true)]
         public virtual SvgTextDecoration TextDecoration
         {
-            get { return (SvgTextDecoration)(this.Attributes["text-decoration"] ?? SvgTextDecoration.Inherit); }
+            get
+            {
+                if (this.Attributes["text-decoration"] == null)
+                    return SvgTextDecoration.Inherit;
+                else
+                    return (SvgTextDecoration)this.Attributes["text-decoration"];
+            }
             set { this.Attributes["text-decoration"] = value; this.IsPathDirty = true; }
         }
 
@@ -245,7 +331,13 @@ namespace Svg
         [SvgAttribute("font-weight", true)]
         public virtual SvgFontWeight FontWeight
         {
-            get { return (SvgFontWeight)(this.Attributes["font-weight"] ?? SvgFontWeight.Inherit); }
+            get
+            {
+                if (this.Attributes["font-weight"] == null)
+                    return SvgFontWeight.Inherit;
+                else
+                    return (SvgFontWeight)this.Attributes["font-weight"];
+            }
             set { this.Attributes["font-weight"] = value; this.IsPathDirty = true; }
         }
 
@@ -457,3 +549,6 @@ namespace Svg
         }
     }
 }
+
+
+#pragma warning restore

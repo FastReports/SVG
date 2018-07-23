@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,6 +7,8 @@ using System.IO;
 using System.Xml;
 using System.Threading;
 using System.Globalization;
+
+#pragma warning disable
 
 namespace Svg
 {
@@ -103,3 +105,6 @@ namespace Svg
         }
     }
 }
+
+
+#pragma warning restore

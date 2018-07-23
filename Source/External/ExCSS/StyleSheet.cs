@@ -1,10 +1,12 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using ExCSS.Model.Extensions;
 
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     public sealed class StyleSheet
@@ -144,3 +146,6 @@ namespace ExCSS
         }
     }
 }
+
+
+#pragma warning restore

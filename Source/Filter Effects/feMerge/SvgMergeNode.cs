@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 
+#pragma warning disable
+
 namespace Svg.FilterEffects
 {
 
@@ -26,3 +28,5 @@ namespace Svg.FilterEffects
 
     }
 }
+
+#pragma warning restore

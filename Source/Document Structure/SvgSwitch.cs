@@ -1,10 +1,12 @@
 using System.Drawing;
 using System.Drawing.Drawing2D;
 
+#pragma warning disable
+
 namespace Svg
 {
     /// <summary>
-    /// The ‘switch’ element evaluates the ‘requiredFeatures’, ‘requiredExtensions’ and ‘systemLanguage’ attributes on its direct child elements in order, and then processes and renders the first child for which these attributes evaluate to true
+    /// The ï¿½switchï¿½ element evaluates the ï¿½requiredFeaturesï¿½, ï¿½requiredExtensionsï¿½ and ï¿½systemLanguageï¿½ attributes on its direct child elements in order, and then processes and renders the first child for which these attributes evaluate to true
     /// </summary>
     [SvgElement("switch")]
     public class SvgSwitch : SvgVisualElement
@@ -87,3 +89,6 @@ namespace Svg
         }
     }
 }
+
+
+#pragma warning restore

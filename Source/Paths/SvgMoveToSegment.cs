@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
 
+#pragma warning disable
+
 namespace Svg.Pathing
 {
     public class SvgMoveToSegment : SvgPathSegment
@@ -25,3 +27,6 @@ namespace Svg.Pathing
 
     }
 }
+
+
+#pragma warning restore

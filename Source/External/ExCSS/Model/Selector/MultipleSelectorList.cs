@@ -1,6 +1,8 @@
-﻿using System.Text;
+using System.Text;
 
 // ReSharper disable once CheckNamespace
+#pragma warning disable
+
 namespace ExCSS
 {
     public class MultipleSelectorList : SelectorList, IToString
@@ -39,3 +41,6 @@ namespace ExCSS
         }
     }
 }
+
+
+#pragma warning restore

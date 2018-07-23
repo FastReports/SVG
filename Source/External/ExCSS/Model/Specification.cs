@@ -1,4 +1,6 @@
-﻿namespace ExCSS.Model
+#pragma warning disable
+
+namespace ExCSS.Model
 {
     internal static class Specification
     {
@@ -96,3 +98,5 @@
         }
     }
 }
+
+#pragma warning restore

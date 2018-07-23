@@ -1,7 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+
+#pragma warning disable
 
 namespace Svg.ExtensionMethods
 {
@@ -14,3 +16,6 @@ namespace Svg.ExtensionMethods
 		}
 	}
 }
+
+
+#pragma warning restore

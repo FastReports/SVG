@@ -3,6 +3,8 @@
 using System;
 using ExCSS.Model;
 
+#pragma warning disable
+
 namespace ExCSS
 {
 	public class Parser
@@ -2789,3 +2791,6 @@ const int selector_en_main = 816;
 		#endregion
 	}
 }
+
+
+#pragma warning restore

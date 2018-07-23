@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.ComponentModel;
 
+#pragma warning disable
+
 namespace Svg
 {
     /// <summary>Specifies the shape to be used at the corners of paths or basic shapes when they are stroked.</summary>
@@ -22,3 +24,6 @@ namespace Svg
         Bevel
     }
 }
+
+
+#pragma warning restore

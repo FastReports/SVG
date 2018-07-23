@@ -1,8 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Fizzler;
+
+#pragma warning disable
 
 namespace Svg.Css
 {
@@ -183,3 +185,6 @@ namespace Svg.Css
         }
     }
 }
+
+
+#pragma warning restore

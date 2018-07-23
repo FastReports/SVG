@@ -19,6 +19,8 @@
 // 
 #endregion
 
+#pragma warning disable
+
 namespace Fizzler
 {
     /// <summary>
@@ -204,3 +206,5 @@ namespace Fizzler
         void NthLastChild(int a, int b);
     }
 }
+
+#pragma warning restore

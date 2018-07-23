@@ -3,6 +3,8 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Xml;
 
+#pragma warning disable
+
 namespace Svg
 {
     /// <summary>
@@ -327,3 +329,5 @@ namespace Svg
         }
     }
 }
+
+#pragma warning restore

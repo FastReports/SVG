@@ -5,6 +5,8 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
 
+#pragma warning disable
+
 namespace Svg
 {
     [SvgElement("linearGradient")]
@@ -554,3 +556,5 @@ namespace Svg
         }
     }
 }
+
+#pragma warning restore

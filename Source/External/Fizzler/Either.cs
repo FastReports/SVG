@@ -21,6 +21,8 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
+#pragma warning disable
+
 namespace Fizzler
 {
     #region Imports
@@ -134,3 +136,5 @@ namespace Fizzler
         }
     }
 }
+
+#pragma warning restore

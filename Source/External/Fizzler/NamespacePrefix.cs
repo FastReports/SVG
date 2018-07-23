@@ -19,6 +19,8 @@
 // 
 #endregion
 
+#pragma warning disable
+
 namespace Fizzler
 {
     using System;
@@ -133,3 +135,6 @@ namespace Fizzler
         }
     }
 }
+
+
+#pragma warning restore

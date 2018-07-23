@@ -1,10 +1,12 @@
 using System.Drawing;
 using System.Drawing.Drawing2D;
 
+#pragma warning disable
+
 namespace Svg
 {
     /// <summary>
-    /// The ‘foreignObject’ element allows for inclusion of a foreign namespace which has its graphical content drawn by a different user agent
+    /// The ï¿½foreignObjectï¿½ element allows for inclusion of a foreign namespace which has its graphical content drawn by a different user agent
     /// </summary>
     [SvgElement("foreignObject")]
     public class SvgForeignObject : SvgVisualElement
@@ -88,3 +90,6 @@ namespace Svg
         }
     }
 }
+
+
+#pragma warning restore

@@ -1,8 +1,10 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Drawing.Drawing2D;
 using System.Globalization;
+
+#pragma warning disable
 
 namespace Svg.Transforms
 {
@@ -56,3 +58,5 @@ namespace Svg.Transforms
 		}
     }
 }
+
+#pragma warning restore

@@ -5,7 +5,9 @@ using System.Diagnostics;
 using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Web.UI.WebControls;
+//using System.Web.UI.WebControls;
+
+#pragma warning disable
 
 namespace Svg
 {
@@ -106,3 +108,5 @@ namespace Svg
         }
     }
 }
+
+#pragma warning restore

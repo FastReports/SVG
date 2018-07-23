@@ -3,6 +3,8 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using Svg.ExtensionMethods;
 
+#pragma warning disable
+
 namespace Svg
 {
     /// <summary>
@@ -203,3 +205,6 @@ namespace Svg
 
     }
 }
+
+
+#pragma warning restore
