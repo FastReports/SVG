@@ -1,34 +1,65 @@
 <Project Sdk="Microsoft.NET.Sdk">
-<PropertyGroup>
-    <OutputType>Library</OutputType>
-    <TargetFrameworks>net40</TargetFrameworks>
-    <RootNamespace>Svg</RootNamespace>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>../Source/svgkey.snk</AssemblyOriginatorKeyFile>
+
+  <PropertyGroup>
+    <TargetFrameworks>net5.0</TargetFrameworks>
   </PropertyGroup>
-<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net452|AnyCPU'">
-  <DefineConstants>TRACE;DEBUG;NETFRAMEWORK;NET452;FASTREPORTSVG</DefineConstants>
-</PropertyGroup>
-<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net452|AnyCPU'">
-  <DefineConstants>TRACE;FASTREPORTSVG;RELEASE;NETFRAMEWORK;NET452</DefineConstants>
-</PropertyGroup>
+
+  <PropertyGroup Condition="'$(OS)' == 'Windows_NT'">
+    <TargetFrameworks>$(TargetFrameworks);net40</TargetFrameworks>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>FastReport.SVG.snk</AssemblyOriginatorKeyFile>
+    <Copyright>Fast Reports Inc.</Copyright>
+    <Company>Fast Reports Inc.</Company>
+    <License>https://github.com/FastReports/SVG/blob/master/license.txt</License>
+    <PackageProjectUrl>https://github.com/FastReports/SVG</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/FastReports/SVG</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Product>FastReport.SVG</Product>
+    <PackageId>FastReport.SVG</PackageId>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageTags>svg, core</PackageTags>
+    <Version>1.0.0</Version>
+    <Configurations>Debug;Release</Configurations>
+    <AssemblyName>FastReport.SVG</AssemblyName>
+    <RootNamespace>Svg</RootNamespace>
+    <OutputType>Library</OutputType>
+    <Description>The project is a modification of public fork of the C# SVG rendering library on codeplex: https://svg.codeplex.com/. This package has been modified by the FastReports team to improve compatibility with cross-platform Core projects.</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net452|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG;NETFRAMEWORK;NET452;FASTREPORTSVG</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net452|AnyCPU'">
+    <DefineConstants>TRACE;FASTREPORTSVG;RELEASE;NETFRAMEWORK;NET452</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)'=='netstandard2.1' OR '$(TargetFramework)'=='netstandard2.0' OR '$(TargetFramework)'=='net5.0'">
+    <PackageReference Include="System.Drawing.Common" Version="4.6.1" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)'=='net40'">
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+
   <ItemGroup>
-	<Compile Include="..\Source\**\*.cs" />
-</ItemGroup>
+    <Compile Include="..\Source\**\*.cs" />
+  </ItemGroup>
+
   <ItemGroup>
     <Compile Remove="..\Source\External\ExCSS\Parser.generated.cs" />
     <Compile Remove="..\Source\External\ExCSS\ParserX.cs" />
     <Compile Remove="..\Source\Resources\svg11.dtd" />
   </ItemGroup>
+  
   <ItemGroup>
     <EmbeddedResource Include="..\Source\Resources\svg11.dtd" />
+    <None Include="icon.png" Pack="true" PackagePath=""/>
   </ItemGroup>
-  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
-    <PackageReference Include="CoreCompat.System.Drawing.v2">
-      <Version>5.2.0-preview1-r131</Version>
-    </PackageReference>
-    <PackageReference Include="System.Drawing.Common">
-      <Version>4.5.0</Version>
-    </PackageReference>
-  </ItemGroup>
+    
 </Project>

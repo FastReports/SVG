@@ -268,7 +268,7 @@ namespace Svg
             {
                 if (ViewBox.Width > 0 && ViewBox.Height > 0)
                 {
-                    bounds = new RectangleF(ViewBox.MinX, ViewBox.MinY, ViewBox.Width, ViewBox.Height);
+                    bounds = new RectangleF(0, 0, ViewBox.Width, ViewBox.Height);
                 }
                 else
                 {
