@@ -196,7 +196,6 @@ namespace Svg
         /// <summary>
         /// Gets or sets the colour of the gradient stop.
         /// </summary>
-        /// <remarks>Apparently this can be set on non-sensical elements.  Don't ask; just check the tests.</remarks>
         [SvgAttribute("stop-color", true)]
         [TypeConverter(typeof(SvgPaintServerFactory))]
         public virtual SvgPaintServer StopColor

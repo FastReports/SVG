@@ -1,4 +1,4 @@
-# SVG.NET
+# SVG.NET (FastReport Edition)
 
 Public fork of the C# SVG rendering library on codeplex: https://svg.codeplex.com/
 
@@ -9,7 +9,7 @@ So please feel free to fork it and open pull requests for any fix, improvement o
 It is also available via Nuget:
 
 ```
-PM> Install-Package Svg
+PM> Install-Package FastReport.SVG
 ```
 
 ## Projects using the library
@@ -20,3 +20,7 @@ PM> Install-Package Svg
 * [Chordious](http://chordious.com) a fretboard diagram generator for fretted stringed instruments.
 
 If you want your project in this list, send me a pull request on this file or link + short description to tebjan (at) vvvv.org
+
+## Important addition 
+
+The project has been modified by the FastReports team to improve compatibility with cross-platform Core projects.
