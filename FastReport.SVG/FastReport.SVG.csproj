@@ -13,7 +13,7 @@
     <AssemblyOriginatorKeyFile>FastReport.SVG.snk</AssemblyOriginatorKeyFile>
     <Copyright>Fast Reports Inc.</Copyright>
     <Company>Fast Reports Inc.</Company>
-    <License>https://github.com/FastReports/SVG/blob/master/license.txt</License>
+    <PackageLicenseFile>license.txt</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/FastReports/SVG</PackageProjectUrl>
     <RepositoryUrl>https://github.com/FastReports/SVG</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -60,6 +60,7 @@
   <ItemGroup>
     <EmbeddedResource Include="..\Source\Resources\svg11.dtd" />
     <None Include="icon.png" Pack="true" PackagePath=""/>
+    <None Include="..\license.txt" Pack="true" PackagePath=""/>
   </ItemGroup>
     
 </Project>
